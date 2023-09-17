@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-barwlow max-w-full">
+ 
+  <header class="grid grid-cols-12 p-9 max-w-full bg-cst-nav-blu  top-0 z-10 inset-x-0 sticky">
+    <nav aria-label="main" class="col-span-full flex justify-end items-center relative">
+      <div class="logo mr-auto">
+        <img src="images/logo.svg" alt="">
+      </div>
+
+      <div class="hamburger text-white font-bold sm:hidden text-3xl">&#9776;</div>
+      
+      <div class="mobilenav-menu sm:hidden absolute top-2/3 py-8 m-8 text-slate-700 bg-white inset-x-0">
+        <ul class="flex flex-col justify-center  items-center gap-7">
+          <li><a href="#" class=" text-lg hover:text-white">About</a></li>
+          <li><a href="#services" class=" text-lg hover:text-white">Service</a></li>
+          <li><a href="#projects" class=" text-lg hover:text-white">Projects</a></li>
+          <button class="uppercase font-semibold text-slate-900 bg-cst-nav-yel text-base py-3 rounded-3xl w-36 hover:bg-cst-blue-hover hover:text-white">contact</button>
+        </ul>  
+      </div>
+
+      <div class="nav-menu hidden sm:block">
+        <ul class="flex justify-center items-center gap-7">
+          <li><a href="#" class=" text-lg text-gray-600 hover:text-white">About</a></li>
+          <li><a href="#services" class=" text-lg text-gray-600 hover:text-white">Service</a></li>
+          <li><a href="#projects" class=" text-lg text-gray-600 hover:text-white">Projects</a></li>
+          <button class="uppercase font-semibold text-slate-900 bg-white text-base py-3 rounded-3xl w-36 hover:bg-cst-blue-hover hover:text-white">contact</button>
+        </ul>  
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main class="">
+    <section id="hero" class="col-span-full bg-teal-600 relative max-w-max">
+      <div class="hero-text flex gap-10 flex-col justify-center items-center absolute top-1/4 inset-x-16">
+        <h1 class="font-Fraunces text-6xl text-white font-bold uppercase text-center">we are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="arrow down">  
+      </div>
+      <img src="images/mobile/image-header.jpg" class="sm:hidden object-cover" alt="mobile-header-img">
+      <img src="images/desktop/image-header.jpg" class=" hidden sm:block object-cover" alt="mobile-header-img">
+    </section>
+  
+
+    <section id="services" class="grid grid-cols-1 ">
+
+      <div class="transforme grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 ">
+        <div class="servi-img sm:col-start-2">
+          <img src="images/mobile/image-transform.jpg" class="sm:hidden w-full h-full object-cover" alt="mobile-transform-img">
+          <img src="images/desktop/image-transform.jpg" class=" hidden sm:block w-full h-full object-cover" alt="desktop-transform-img">
+        </div>
+        <div class="service-txt grid place-content-center gap-8 p-12 sm:row-start-1 sm:p-20 lg:p-36">
+          <h3 class="font-Fraunces font-bold text-center text-4xl sm:text-left"> Transform your brand</h3>
+          <p class="font-barwlow text-lg text-center text-gray-800 font-medium sm:text-left">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <button class="uppercase font-Fraunces font-bold text-lg text-center mx-auto border-cst-btn  sm:w-36 sm:text-left sm:mx-0 border-b-8 hover:border-cst-btn-horver ">Learn more</button>
+        </div>
+      </div>
+
+      <div class="standOut grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1">
+        <div class="servi-img ">
+          <img src="images/mobile/image-stand-out.jpg" class="sm:hidden w-full h-full object-cover" alt="mobile-standout-img">
+          <img src="images/desktop/image-stand-out.jpg" class=" hidden sm:block w-full h-full object-cover " alt="desktop-standout-img">
+        </div>
+        <div class="service-txt grid place-content-center gap-8 p-12 sm:p-20 lg:p-36">
+          <h3 class="font-Fraunces font-bold text-center text-4xl sm:text-left"> Stand out to the right audience</h3>
+          <p class="font-barwlow text-lg text-center text-gray-800 font-medium sm:text-left">  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <button class="uppercase font-Fraunces font-bold text-lg text-center mx-auto border-cst-btn  sm:w-36 sm:text-left sm:mx-0 border-b-8 hover:border-cst-btn-horver ">Learn more</button>
+        </div>
+      </div>
+
+
+      <div class="service2 col-span-full grid sm:grid-cols-2 sm:grid-rows-1">
+        <div class="graphic relative text-cst-crd-grn">
+          <img src="images/mobile/image-graphic-design.jpg" class="md:hidden w-full h-auto " alt="">
+          <img src="images/desktop/image-graphic-design.jpg" class="hidden  w-full h-auto md:block" alt="">
+          <div class="graphicsContent absolute bottom-8 grid gap-8  text-center">
+            <h3 class="font-Fraunces font-bold text-3xl"> Graphics Design</h3>
+            <p class="font-barwlow text-lg font-medium lg:px-36">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+        <div class="graphic relative text-cst-crd-blu">
+          <img src="images/mobile/image-photography.jpg" class="md:hidden w-full h-auto " alt="">
+          <img src="images/desktop/image-photography.jpg" class="hidden  w-full h-auto md:block" alt="">
+          <div class="graphicsContent absolute bottom-8 grid gap-8  text-center">
+            <h3 class="font-Fraunces font-bold text-3xl"> Photography</h3>
+            <p class="font-barwlow text-lg font-medium lg:px-36">  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="testimonials" class="flex flex-col items-center gap-8 mt-8">
+      <h3 class="font-Fraunces font-medium text-gray-300 text-3xl "> Photography</h3>
+
+      <div class="persons grid sm:grid-cols-3">
+        <div class="person1 text-center flex flex-col justify-center items-center">
+          <img src="images/image-emily.jpg" class="w-16 h-16 rounded-full" alt="Emily">
+          <p class="font-barwlow text-lg text-center text-gray-800 font-medium p-8">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="">
+            <p class="font-Fraunces font-bold text-3x px-8">Emily R,</p>
+            <p class="font-barwlow text-base text-center text-gray-400 font-medium p-3">Marketing Director</p>
+          </div>
+        </div>
+        <div class="person2 text-center flex flex-col justify-center items-center">
+          <img src="images/image-thomas.jpg" class="w-16 h-16 rounded-full" alt="thomas">
+          <p class="font-barwlow text-lg text-center text-gray-800 font-medium p-8">  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="">
+            <p class="font-Fraunces font-bold text-3x px-8">Thomasy S.</p>
+            <p class="font-barwlow text-base text-center text-gray-400 font-medium p-3">Marketing Director</p>
+          </div>
+        </div>
+        <div class="person3 text-center flex flex-col justify-center items-center">
+          <img src="images/image-jennie.jpg" class="w-16 h-16 rounded-full" alt="jennie">
+          <p class="font-barwlow text-lg text-center text-gray-800 font-medium p-8">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="">
+            <p class="font-Fraunces font-bold text-3x px-8">Jennie F.</p>
+            <p class="font-barwlow text-base text-center text-gray-400 font-medium p-3">Marketing Director</p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <section id="projects" class="col-span-full grid grid-cols-2 sm:grid-cols-4">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" class="sm:hidden" alt="mobile-milk">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" class="hidden sm:block" alt="desktop-milk">
+      <img src="images/mobile/image-gallery-orange.jpg" class="sm:hidden" alt="mobile-orange">
+      <img src="images/desktop/image-gallery-orange.jpg" class="hidden sm:block" alt="mobile-orange">
+      <img src="images/mobile/image-gallery-cone.jpg" class="sm:hidden" alt="desktop-cone">
+      <img src="images/desktop/image-gallery-cone.jpg" class="hidden sm:block" alt="desktop-cone">
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" class="sm:hidden" alt="mobil-sugar">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" class="hidden sm:block" alt="desktop-sugar">
+    </section>
+
+  </main>
+ 
+
+
+  <footer class="col-span-full grid grid-rows-3 gap-4 place-content-center bg-cst-ft-grn text-center p-8">
+    <h3 class="text-4xl text-cst-crd-grn font-bold">Sunnyside</h3>
+    <div class="flex gap-8 items-center justify-center font-medium">
+      <a href="#" class="text-sm text-cst-crd-grn">Home</a>
+      <a href="#service" class="text-sm text-cst-crd-grn">Service</a>
+      <a href="#Project" class="text-sm text-cst-crd-grn">Project</a>
+    </div>
+    <div class="socials flex gap-4 items-center justify-center text-cst-crd-grn mt-8">
+      <a href="https://twitter.com/kehindeDaniels_"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
+      <a href="https://www.instagram.com/kenhindedaniels501/"><img src="images/icon-instagram.svg" alt="icon-instagram"></a>
+      <a href="https://www.facebook.com/daniel.adeleke.77?mibextid=ZbWKwL"><img src="images/icon-facebook.svg" alt="facebook-icon"></a>
+      <a href="https://medium.com/@kehindedaniels501"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
